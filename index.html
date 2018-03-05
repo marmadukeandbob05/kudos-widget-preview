@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1 style="padding: 20px 20px 0px 20px;">Kudos Widget Preview</h1>
+  <div class="DOI-entry" style="padding: 20px;">
+    <input style="padding: 10px;" placeholder="Paste a DOI here..." size="40" id="DOI">
+    <button id="go" style="padding: 10px 15px;">Go!</button><br>
+    <h1></h1>
+    <div class="options">
+    <div style="background-color: #d8d8d8; border: 1px solid #d8d8d8; width: 200px; padding: 10px; float: left;">
+      <input id="r1" type="radio" name="w-type" value="ex" checked="checked" style="padding: 10px;"> Explain Widget</input><br>
+      <input id="r2" type="radio" name="w-type" value="re"> Resource Widget</input>
+    </div>
+    <h1></h1>
+  <div style="background-color: #d8d8d8; border: 1px solid #d8d8d8; width: 200px; padding: 10px; float: left;">
+      <a style="font-size: 13px; padding: 10px 40px; color: #4286f4;"   onclick="$('#DOI').val('10.1371/journal.pone.0062325'); $('#go').trigger('click');">Example 1</a><br>
+      <a style="font-size: 13px; padding: 10px 40px; color: #4286f4;"   onclick="$('#DOI').val('10.1108/mbr-01-2013-0004'); $('#go').trigger('click');">Example 2</a>
+
+    </div>
+
+  </div><br>
+
+  </div>
+
+  <br><br><small style="padding: 0px 0px 0px 20px;">Made for Kudos by Ben Sommer</small><br><p style="padding: 0px 0px 0px 20px;">Resize window to view different widths</p>
+
+  <div id="stuffs" style="padding: 10px;">
+    <div id="preview" style="width: 50%; height: 50%; padding: 0px; display: none;">
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
