@@ -37,4 +37,6 @@ $(function(){
 
 
    });
+   
+   $("#preview").css("width", $("userWidth").val());
 });
