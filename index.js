@@ -6,7 +6,7 @@ $(function(){
      $('#go').trigger('click');
    });
    $("#go").click(function () {
-      $("#preview").css("width", $("userWidth").val().concat("%"));
+      $("#preview").css("width", $("#userWidth").val().concat("%"));
 
 
 
