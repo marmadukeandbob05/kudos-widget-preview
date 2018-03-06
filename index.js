@@ -38,5 +38,5 @@ $(function(){
 
    });
    
-   $("#preview").css("width", $("userWidth").val());
+   $("#preview").css("width", $("userWidth").val().concat("%"));
 });
