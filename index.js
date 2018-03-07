@@ -38,5 +38,14 @@ $(function(){
 
    });
    
+   function nWin() {
+     var w = window.open();
+     var html = $("#stuffs").html();
+
+       $(w.document.body).html(html);
+   }
+   
+   $("#pop-out").click(nWin);
+   
    
 });
