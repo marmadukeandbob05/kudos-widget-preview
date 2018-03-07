@@ -11,12 +11,12 @@ $(function(){
 
      if ($('input[name=w-type]:checked').val() == "ex") {
         var DOI = $("#DOI");
-        var good_url = ("//api.growkudos.com/widgets/article/".concat(DOI.val()));
+        var good_url = ("//api.growkudos.com/widgets/article/".concat(DOI.val()).concat("?omit_icons=true"));
      }
 
      if ($('input[name=w-type]:checked').val() == "re") {
          var DOI = $("#DOI");
-         var good_url = ("//api.growkudos.com/widgets/resources/".concat(DOI.val()));
+         var good_url = ("//api.growkudos.com/widgets/resources/".concat(DOI.val()).concat("?omit_icons=true"));
      }
 
      $("#preview").css("display", "inline");
