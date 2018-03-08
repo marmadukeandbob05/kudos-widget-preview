@@ -33,10 +33,7 @@ $(function(){
      newItem.setAttribute("type","text/javascript");
      newItem.setAttribute("src", good_url);
 
-
      division.insertBefore(newItem, division.childNodes[0]);
-      
-
 
 
    });
