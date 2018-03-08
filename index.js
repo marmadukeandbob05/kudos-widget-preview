@@ -33,7 +33,32 @@ $(function(){
      newItem.setAttribute("type","text/javascript");
      newItem.setAttribute("src", good_url);
 
+
      division.insertBefore(newItem, division.childNodes[0]);
+      
+      var division = document.getElementById("preview");
+     while (division.firstChild) {
+        division.removeChild(division.firstChild);
+     }
+
+     var newItem = document.createElement('script');
+     newItem.setAttribute("type","text/javascript");
+     newItem.setAttribute("src", good_url);
+     newItem.addClass("kw-med");
+
+     division.insertBefore(newItem, division.childNodes[1]);
+      
+      var division = document.getElementById("preview");
+     while (division.firstChild) {
+        division.removeChild(division.firstChild);
+     }
+
+     var newItem = document.createElement('script');
+     newItem.setAttribute("type","text/javascript");
+     newItem.setAttribute("src", good_url);
+     newItem.addClass("kw-full");
+
+     division.insertBefore(newItem, division.childNodes[2]);
 
 
    });
