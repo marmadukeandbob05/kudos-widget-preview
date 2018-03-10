@@ -6,7 +6,7 @@ $(function(){
      $('#go').trigger('click');
    });
 
-   $("#width").click(function () {
+   $("#width").change(function () {
      $("#kwp").attr("href", $( "select#width option:checked" ).val().concat(".css"));
      $('#go').trigger('click');
    });
