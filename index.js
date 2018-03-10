@@ -5,18 +5,31 @@ $(function(){
    $("#r2").click(function () {
      $('#go').trigger('click');
    });
+
+   $("#width").click(function () {
+     $("#kwp").attr("href", $( "select#width option:checked" ).val().concat(".css"));
+     $('#go').trigger('click');
+   });
+
    $("#go").click(function () {
+     params = ""
+
+     if ($( "select#width option:checked" ).val() == "300px") {
+       params = "?omit_icons=true";
+     } else {
+       params = "";
+     }
 
 
 
      if ($('input[name=w-type]:checked').val() == "ex") {
         var DOI = $("#DOI");
-        var good_url = ("//api.growkudos.com/widgets/article/".concat(DOI.val()).concat("?omit_icons=true"));
+        var good_url = ("//api.growkudos.com/widgets/article/".concat(DOI.val()).concat(params));
      }
 
      if ($('input[name=w-type]:checked').val() == "re") {
          var DOI = $("#DOI");
-         var good_url = ("//api.growkudos.com/widgets/resources/".concat(DOI.val()).concat("?omit_icons=true"));
+         var good_url = ("//api.growkudos.com/widgets/resources/".concat(DOI.val()).concat(params));
      }
 
      $("#preview").css("display", "inline");
@@ -37,6 +50,6 @@ $(function(){
 
 
    });
-   
-   
+
+
 });

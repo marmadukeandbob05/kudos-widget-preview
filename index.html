@@ -11,53 +11,55 @@
   <h1 style="padding: 20px 20px 0px 20px;">Kudos Widget Preview</h1>
   <div class="DOI-entry" style="padding: 20px;">
     <input type="text" style="padding: 10px;" placeholder="Paste a DOI here..." size="40" id="DOI">
-    <button id="go" style="padding: 10px 20px;">Go!
+    <button class="btn btn-success" id="go" style="padding: 10px 20px;"><strong>Go!</strong></button>
     </div>
-    
+
     <h1></h1>
     <h1></h1>
     <div class="options">
-   
+
       <div style="background-color: #d8d8d8; border: 1px solid #d8d8d8; padding: 10px;" align="center">
         <input id="r1" type="radio" name="w-type" value="ex" checked="checked" style="padding: 10px;"> Explain Widget</input>
-        <input id="r2" type="radio" name="w-type" value="re"> Resource Widget</input>
-        <br><br><small style="padding: 0px 0px 0px 20px;"><a style="font-size: 13px; padding: 10px 40px; color: #4286f4;" onclick="$('#DOI').val('10.1108/mbr-01-2013-0004'); $('#go').trigger('click');">Example 1</a>  <a style="font-size: 13px; padding: 10px 40px; color: #4286f4;" onclick="$('#DOI').val('10.1371/journal.pone.0062325'); $('#go').trigger('click');">Example 2</a><br><p style="padding-left: 20px;">Made for Kudos by Ben Sommer</p></small>
+        <input id="r2" type="radio" name="w-type" value="re"> Resource Widget</input><br><br><p style="display: inline;">Width: </p>
+
+        <select name="width" id="width">
+          <option value="300px">300 pixels</option>
+          <option value="600px">600 pixels</option>
+          <option value="100">Full width</option>
+        </select>
+        <br><br><small style="padding: 0px 0px 0px 20px;"><a style="font-size: 13px; padding: 10px 20px; color: #4286f4;" onclick="$('#DOI').val('10.1108/mbr-01-2013-0004'); $('#go').trigger('click');">Example 1</a>  <a style="font-size: 13px; padding: 10px 20px; color: #4286f4;" onclick="$('#DOI').val('10.1371/journal.pone.0062325'); $('#go').trigger('click');">Example 2</a><br><p style="padding-left: 20px;">Made for Kudos by Ben Sommer</p></small>
       </div>
     </div>
-  
+
     <style>
-      .kudos-widget {
-        overflow: auto;
-      }
 
       body {
         text-align: center;
       }
-      
+
       .kudos-widget-article, .kudos-widget-resources {
         text-align: left;
       }
     </style>
 
 
+
+
   <br>
 
   </div>
 
-  
- 
+  <link id="kwp" rel="stylesheet" href="300px.css">
+
+
+
   <div id="stuffs" style="padding: 10px; padding-bottom: 30px;" align="center">
     <div id="preview" style="width: 50%; height: 50%; padding: 0px; display: none;">
     </div>
   </div>
 
-  <style>
-    .kudos-widget {
-      width: 300px;
-    }    
-  </style>
 
-  
+
   <script src="index.js"></script>
 
 
