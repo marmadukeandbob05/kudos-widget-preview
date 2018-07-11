@@ -24,12 +24,12 @@ $(function(){
 
      if ($('input[name=w-type]:checked').val() == "ex") {
         var DOI = $("#DOI");
-        var good_url = ("//api.growkudos.com/widgets/article/".concat(DOI.val()).concat(params));
+        var good_url = ("https://api.growkudos.com/widgets/article/".concat(DOI.val()).concat(params));
      }
 
      if ($('input[name=w-type]:checked').val() == "re") {
          var DOI = $("#DOI");
-         var good_url = ("//api.growkudos.com/widgets/resources/".concat(DOI.val()).concat(params));
+         var good_url = ("https://api.growkudos.com/widgets/resources/".concat(DOI.val()).concat(params));
      }
 
      $("#preview").css("display", "inline");
