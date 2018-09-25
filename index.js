@@ -5,6 +5,9 @@ $(function(){
    $("#r2").click(function () {
      $('#go').trigger('click');
    });
+   $("#r3").click(function () {
+     $('#go').trigger('click');
+   });
 
    $("#width").change(function () {
      $("#kwp").attr("href", $( "select#width option:checked" ).val().concat(".css"));
@@ -30,6 +33,11 @@ $(function(){
      if ($('input[name=w-type]:checked').val() == "re") {
          var DOI = $("#DOI");
          var good_url = ("https://api.growkudos.com/widgets/resources/".concat(DOI.val()).concat(params));
+     }
+
+     if ($('input[name=w-type]:checked').val() == "use") {
+         var DOI = $("#DOI");
+         var good_url = ("https://api.growkudos.com/widgets/use_kudos/".concat(DOI.val()).concat(params));
      }
 
      $("#preview").css("display", "inline");
