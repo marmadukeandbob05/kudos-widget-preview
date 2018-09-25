@@ -17,57 +17,56 @@
         <div class="mui--text-display1">Kudos Widget Preview</div>
       </div>
     </header>
-    <div id="content-wrapper" class="mui--text-center">
-      <div class="mui--appbar-height"></div>
-      <br>
-      <div class="mui-textfield in">
-        <input id="DOI" type="text" placeholder="Enter a DOI">
-        <button class="mui-btn mui-btn--primary" id="go">GO</button>
-      </div>
-      <div class="mui-radio">
-        <label>
-          <input type="radio"
-                 name="w-type"
-                 id="r1"
-                 value="ex"
-                 checked>
-          Explain Widget
-        </label>
-      </div>
-      <div class="mui-radio">
-        <label>
-          <input type="radio"
-                 name="w-type"
-                 id="r2"
-                 value="re">
-          Resource Widget
-        </label>
-      </div>
-      <div class="mui-radio">
-        <label>
-          <input type="radio"
-                 name="w-type"
-                 id="r3"
-                 value="use">
-          Use Kudos Widget
-        </label>
-      </div>
-      <br>
-      <select id="width" name="width">
-        <option value="300px">300 pixels</option>
-        <option value="600px">600 pixels</option>
-        <option value="100">Full width</option>
-      </select>
-      <br>
-      <br>
-      <button class="mui-btn mui-btn--primary" onclick="$('#DOI').val('10.1108/mbr-01-2013-0004'); $('#go').trigger('click');">Explained Example</button>
-      <button class="mui-btn mui-btn--primary" onclick="$('#DOI').val('10.1371/journal.pone.0062343'); $('#go').trigger('click');">Unexplained Example</button>
+    <div id="content-wrapper">
+      <div class="mui--text-center">
+        <div class="mui--appbar-height"></div>
+        <br>
+        <div class="mui-textfield in">
+          <input id="DOI" type="text" placeholder="Enter a DOI">
+          <button class="mui-btn mui-btn--primary" id="go">GO</button>
+        </div>
+        <div class="mui-radio">
+          <label>
+            <input type="radio"
+                   name="w-type"
+                   id="r1"
+                   value="ex"
+                   checked>
+            Explain Widget
+          </label>
+        </div>
+        <div class="mui-radio">
+          <label>
+            <input type="radio"
+                   name="w-type"
+                   id="r2"
+                   value="re">
+            Resource Widget
+          </label>
+        </div>
+        <div class="mui-radio">
+          <label>
+            <input type="radio"
+                   name="w-type"
+                   id="r3"
+                   value="use">
+            Use Kudos Widget
+          </label>
+        </div>
+        <br>
+        <select id="width" name="width">
+          <option value="300px">300 pixels</option>
+          <option value="600px">600 pixels</option>
+          <option value="100">Full width</option>
+        </select>
+        <br>
+        <br>
+        <button class="mui-btn mui-btn--primary" onclick="$('#DOI').val('10.1108/mbr-01-2013-0004'); $('#go').trigger('click');">Explained Example</button>
+        <button class="mui-btn mui-btn--primary" onclick="$('#DOI').val('10.1371/journal.pone.0062343'); $('#go').trigger('click');">Unexplained Example</button>
 
-      <br>
-      <br>
-
-    </div>
-    <div id="content-wrapper" class="mui--text-center">
+        <br>
+        <br>
+      </div>
       <div id="stuffs" style="padding: 10px; padding-bottom: 30px;" align="center">
         <div id="preview">
 
