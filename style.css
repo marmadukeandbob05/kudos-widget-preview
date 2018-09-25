@@ -95,3 +95,7 @@ select {
   padding: 0px;
   display: inline;
 }
+
+.mui--text-center {
+  text-align: center;
+}
