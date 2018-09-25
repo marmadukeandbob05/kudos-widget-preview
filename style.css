@@ -99,3 +99,7 @@ select {
 .mui--text-center {
   text-align: center;
 }
+
+.kudos-article-title {
+  text-align: left !important;
+}
