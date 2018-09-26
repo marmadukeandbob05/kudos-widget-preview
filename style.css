@@ -100,6 +100,6 @@ select {
   text-align: center;
 }
 
-.kudos-article-title {
+.kudos-article-title, with-bottom-small-margin {
   text-align: left !important;
 }
